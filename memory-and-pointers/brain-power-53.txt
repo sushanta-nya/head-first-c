@@ -1,0 +1,8 @@
+Why do you think sizeof(msg) is shorter than the length of the whole
+string? What is msg? Why would it return different sizes on different
+machines?
+
+A.
+sizeof(msg) is shorter than the length of the whole string because msg
+is actually a pointer. The difference size is because pointers are of
+different size in different machines.

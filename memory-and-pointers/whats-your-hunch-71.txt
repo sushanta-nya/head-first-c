@@ -1,0 +1,10 @@
+It’s time to use your intuition. Don’t overanalyze. Just take a guess.
+Read through these possible answers and select only the one you think
+is correct.
+
+What do you think the problem is?
+
+[X] The String can't be updated.
+[ ] We're swapping characters outside the string.
+[ ] The string isn't in memory.
+[ ] Something else.
