@@ -1,0 +1,90 @@
+Each of the C files on this page represents a complete source
+file. Your job is to play compiler and determine whether each of this
+files will compile, and if not, why not. For extra bonus points, say
+what you think the output of each compiled file will be when run, and
+whether you think the code is working as intended.
+
+A
+#include <stdio.h>
+
+int main()
+{
+    int card = 1;
+    if (card > 1)
+        card = card - 1;
+	if (card < 7)
+	    puts("Small Card");
+	else {
+	    puts("Ace!");
+    }
+    return 0;
+}
+
+This program will compile!
+
+Output:
+Small Card
+
+Discussion:
+It seems the program doesn't work as intended. Value of card is set to
+1 so the evaluation of first if returns false and the program goes
+straight to second if.
+
+B
+#include <stdio.h>
+
+int main()
+{
+    int card = 1;
+    if (card > 1) {
+        card = card - 1;
+	if (card < 7)
+	    puts("Small card");
+	else
+	    puts("Ace!");
+    }
+    return 0;
+}
+
+The program will compile but will quit without any output and is not
+working as intended because else is matched with wrong if.
+
+
+C
+#include <stdio.h>
+
+int main()
+{
+    int card = 1;
+    if (card > 1) {
+        card = card - 1;
+	if (card > 7)
+	    puts("Small card");
+    } else
+      puts("Ace!");
+      return 0;
+}
+
+The code will compile and work as intended.
+Output:
+Ace!
+
+D
+#include <stdio.h>
+
+int main()
+{
+    int card = 1;
+    if (card > 1) {
+        card = card - 1;
+	if (card < 7)
+	    puts ("Small card");
+    else
+        puts("Ace!");
+    return 0;
+}
+
+This code will not compile
+Output:
+[Something like missing '}' ]
+

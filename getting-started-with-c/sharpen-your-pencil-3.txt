@@ -1,0 +1,65 @@
+Try to guess what each of these code frangments does.
+
+int card_count = 11;
+    initialize card_count to 11
+
+if (card_count > 10)
+   if card count is greater than 10 ...
+
+   puts("The deck is hot. Increase bet.");
+   	     Output this line.
+
+int c = 10;
+    initialize c to 10
+
+while (c > 0) {
+      As long as c is greater than 0 do ...
+
+      puts("I must not write code in class");
+      	      output this line.
+
+      c = c - 1;
+      	      reduce c by 1
+
+}
+	End of while loop
+
+/* Assume name shorter than 20 chars. */
+   This is a comment.
+
+char ex[20];
+     Get a character array of length 20
+
+puts("Enter boyfriend's name: ");
+     Output this line.
+
+scanf("%19s", ex);
+     Scan 19 characters and insert it into ex
+
+printf("Dear %s.\n\n\tYou're history.\n", ex);
+     Out the line replacing %s with value of ex
+
+char suit = 'H';
+     Initialize suit to 'H'
+
+switch(suit) {
+     Start checking suit
+
+case 'C':
+     If it is 'C' do ...
+     puts("Clubs");
+     break;	break out of switch
+
+case 'D':
+     puts("Diamonds");
+     break;
+
+case 'H':
+     puts("Hearts");
+     break;
+
+default:
+	If any of the previous cases doesn't trigger do ...
+	puts("Spades");
+}
+	End of Program.
