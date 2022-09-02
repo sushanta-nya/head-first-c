@@ -1,0 +1,4 @@
+Which of the above should you use for the jukebox program? Write your
+answer below.
+
+strstr()

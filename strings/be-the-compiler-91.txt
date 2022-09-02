@@ -1,0 +1,14 @@
+The jukebox program needs a main() function that reads input from the
+user and calls the find_track() function on the opposite page. Your
+job is to play like you are the compiler and say which of the
+following main() functions is the one you need for the jukebox
+program.
+
+int main()
+{
+    char search_for[80];
+    printf("Search for: ");
+    fgets(search_for, 80, stdin);
+    find_track(search_for);
+    return 0;
+}

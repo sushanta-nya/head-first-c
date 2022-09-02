@@ -1,0 +1,17 @@
+The guys are working on a new piece of code for a game. They've
+created a function that will display a string backward on the
+screen. Unfortunately, some of the fridge magnets have moved out of
+place. Do you think you can help them to reassemble the code?
+
+void print_reverse(char *s)
+{
+    size_t len = strlen(s);
+
+    char *t = s + len - 1;
+
+    while (t >= s) {
+        printf("%c", *t);
+
+        t = t - 1;
+    }
+}

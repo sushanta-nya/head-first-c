@@ -1,0 +1,17 @@
+The guys in the longue has already started to write the code to search
+through the track list, but - oh no! - some of the paper they were
+writing the code on has fallen into the pool. Do you think you can
+select the correct pieces of code to complete the search function?
+It's been a while since the pool was cleaned, so be warned: some of
+the code in the pool might not be needed for this program.
+Note: the guys have slipped in a couple of new pieces of code they
+found in a book somewhere.
+
+void find_track(char search_for[])
+{
+    int i;
+    for (i = 0; i < 5; i++) {
+        if (strstr(tracks[i], search_for))
+	    printf("Track %i: '%s'\n", i, tracks[i]);
+	}
+}

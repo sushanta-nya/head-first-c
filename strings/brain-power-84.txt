@@ -1,0 +1,4 @@
+There'll be lots of strings in this program. How do you think you can
+record that information in c?
+
+A. We could use arrays of string.
