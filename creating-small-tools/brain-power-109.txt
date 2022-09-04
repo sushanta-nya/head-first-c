@@ -1,0 +1,5 @@
+Is there any way of making our program use files without changing
+code? Without even recompiling it?
+
+A. We could try to redirect the input and output sources of the
+program. 

@@ -1,0 +1,6 @@
+Study the code. What do you think happened? Is the code doing what you
+asked it to? Why weren’t there any error messages? Why did the mapping
+program think that the entire output.json file was corrupt?
+
+As we are redirecting the output to another file the error we printed
+with printf also got to that file and corrupted it.

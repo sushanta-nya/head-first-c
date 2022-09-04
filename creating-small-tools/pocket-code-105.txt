@@ -1,0 +1,32 @@
+Hey, who hasn't taken a code printout on a long ride only to find it
+soon becomes... unreadable? Sure, we all have. But with a little
+thought, you should be able to piece together the original version of
+some code.
+
+This program can read comma-separated data from the command line and
+then display it in JSON format. See if you can figure out what the
+missing code is.
+
+#include <stdio.h>
+
+int main()
+{
+    float latitude;
+    float longitude;
+    char info[80];
+    int started = 0;
+
+    puts("data=[");
+    while (scanf("%f, %f, %79[^\n]", &latitude, &longitude, info) ==
+    3) {
+        if (started)
+	    printf(",\n");
+	else
+	    started = 1;
+	printf("{latitude: %f, longitude: %f, info: '%s'}", latitude,
+    longitude, info);
+        }
+
+    puts("\n]");
+    return 0;
+}
