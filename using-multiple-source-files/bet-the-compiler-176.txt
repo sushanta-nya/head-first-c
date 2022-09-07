@@ -1,0 +1,74 @@
+Look at the program below. Part of the program is missing. Your job is
+to play like you're the compiler and say what you would do if each of
+the candidate code fragments on the right were slotted into the
+missing space.
+
+#include <stdio.h>
+
+/* missing space */
+    printf("A day on Mercury is %f hours\n", day);
+    return 0;
+ }
+
+float mercury_day_in_earth_days()
+{
+    return 58.65;
+}
+
+int hours_in_an_earth_day()
+{
+    return 24;
+}
+
+Fragment #1
+float mercury_day_in_earth_days();
+int hours_in_an_earth_day();
+
+int main()
+{
+    float length_of_day = mercury_day_in_earth_day();
+    int hours = hours_in_an_earth_day();
+    float day = length_of_day * hours;
+
+[X] You can compile the code
+[ ] You should display a warning
+[X] The program will work
+
+Fragment #2
+float mercury_day_in_earth_days();
+
+int main()
+{
+    float length_of_day = mercury_day_in_earth_day();
+    int hours = hours_in_an_earth_day();
+    float day = length_of_day * hours;
+
+[X] You can compile the code
+[X] You should display a warning
+[X] The program will work
+
+Fragment #3
+
+int main()
+{
+    float length_of_day = mercury_day_in_earth_day();
+    int hours = hours_in_an_earth_day();
+    float day = length_of_day * hours;
+
+[ ] You can compile the code
+[X] You should display a warning
+[ ] The program will work
+
+Fragment #4
+float mercury_day_in_earth_days();
+int hours_in_an_earth_day();
+
+int main()
+{
+    int length_of_day = mercury_day_in_earth_day();
+    int hours = hours_in_an_earth_day();
+    float day = length_of_day * hours;
+
+[X] You can compile the code
+[ ] You should display a warning
+[ ] The program will work

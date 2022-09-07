@@ -1,0 +1,10 @@
+Hey, baby, if you don't groove to the latest tunes, then you'll love
+the program the guys in the Head First Lounge just wrote! oggswing is
+a program that reads an Ogg Vorbis music file and creates a swing
+version. Sweet! See if you can complete the makefile that compiles
+oggswing and then uses it to convert a .ogg file:
+
+oggswing: oggswing.c oggswing.h
+	  gcc oggswing.c -o oggswing
+swing.ogg: oggswing whitennerdy.ogg
+	   oggswing whitennerdy.ogg swing.ogg

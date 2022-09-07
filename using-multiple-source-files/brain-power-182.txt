@@ -1,0 +1,6 @@
+Imagine you have a set of functions that you want to share between
+programs. If you had created the C programming language, how would you
+allow code to be shared?
+
+A. The commond code could be saved in a separate independant file
+which then could be included in subsequent files where they would be used.

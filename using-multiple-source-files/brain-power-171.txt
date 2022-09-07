@@ -1,0 +1,6 @@
+The computer makes an assumption that the function returns an int,
+when in reality it returns an float. If you were designing the C
+language, how would you fix the problem?
+
+A. There could be a declaration line for each programs just like there
+are for variables.

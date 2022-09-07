@@ -1,0 +1,8 @@
+Think carefully. Even a simple change might mean running a large, slow
+compile to see the result. Given what you know about the compilation
+process, how could you speed up the time to recompile the program?
+
+A. It seems the compiler compiles everything during compilation. That
+need not to be so. The compiler can simply recompile the modified
+source file and relink everything back together to generate the
+executable file.
