@@ -1,0 +1,4 @@
+This one doesn't compile:
+
+margita m;
+m = {2.0, 1.0, {0.5}};

@@ -1,0 +1,8 @@
+This code is doing something weird. But you've already been given
+enough information to tell you exactly what happened. Can you work out
+what it is?
+
+A. C passes everything by value so in this case passed a copy of
+turtle structure. The code worked for a while because it was
+displaying the copied structure but failed the moment function
+returned because original copy was unaltered.
