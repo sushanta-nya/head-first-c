@@ -1,0 +1,11 @@
+Oh, no, the code for the display() function was on the fridge door,
+but someone's mixed up the magnets. Do you think you can reassemble
+the code?
+
+void display(island *start)
+{
+  island *i = start;
+
+  for(; i != NULL; i= i->start.next) {
+    printf("Name: %s open: %s-%s\n", i->name, i->opens, i->closes);
+  }
