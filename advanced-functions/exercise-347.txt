@@ -1,0 +1,12 @@
+double total(int args, ...)
+{
+  va_list ap;
+  va_start(ap, args);
+  int i;
+  double total = 0;
+  for (i = 0; i < args, i++) {
+    total += price(va_arg(ap, enum drink));
+   }
+ va_end(ap);
+ return total;
+}

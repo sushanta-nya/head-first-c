@@ -1,0 +1,27 @@
+int sports_or_workout(char *s)
+{
+  return strstr(s, "sports") || strstr(s, "workout");
+}
+
+int ns_theater(char *s)
+{
+  return strstr(s, "NS") && strstr(s, "theater);
+}
+
+int arts_theater_or_dining(char *s)
+{
+  return strstr(s, "arts") || strstr(s, "theater") || strstr(s, "dining);
+}
+
+void find(int (*match)(char*))
+{
+  int i;
+  puts("Search Results:");
+  puts("------------------------------------");
+  for (i = 0; i < NUM_ADS; i++) {
+    if (match(ADS[i])) {
+      printf("%s\n", ADS[i]);
+    }
+  }
+  puts("------------------------------------");
+}
