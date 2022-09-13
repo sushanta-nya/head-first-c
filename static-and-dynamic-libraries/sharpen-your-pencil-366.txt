@@ -1,0 +1,19 @@
+1. Start by creating an object file called hfcal.o. The hfcal.h header
+is going to be stored in ./includes:
+
+A. gcc -c hfcal.c -o hfcal.o -I./includes
+
+2. Next, you need to create an object file called elliptical.o from
+the elliptical.c test program
+
+A. gcc -c elliptical.c -o elliptical.o -I./includes
+
+3. Now you need to create an archive library from hfcal.o and store it
+in ./libs:
+
+A. ar -rcs ./libs/libhfcal.a hfcal.o
+
+4. Finally, create the elliptical executable using elliptical.o and
+the hfcal archive:
+
+A. gcc elliptical.o -o elliptical -lhfcal -L./libs
